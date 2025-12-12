@@ -2,7 +2,6 @@
 
 <div align="center">
   
-![Talent Quotient Banner](frontend/public/hero.png)
 
 **A collaborative coding platform with real-time video calls, pair programming, and multi-language code execution**
 
