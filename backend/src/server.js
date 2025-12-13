@@ -24,7 +24,7 @@ app.use((req, res, next) => {
 // middleware
 app.use(express.json());
 app.use(cors({
-  origin: ENV.CLIENT_URL || 'http://localhost:5173',
+  origin: ENV.CLIENT_URL || 'http://localhost:5173' || 'https://talent-quotient-frontend.vercel.app',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
