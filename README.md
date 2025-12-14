@@ -1,8 +1,16 @@
-# Talent Quotient V2 - Full Stack Platform
+# Talent Quotient Full Stack Coding Interview Platform
 
-A comprehensive full-stack platform for technical interviews and talent assessment with real-time coding collaboration, video calls, and session management.
+<div align="center">
+  
 
-![Talent Quotient Screenshot](/public/screenshot-for-readme.png)
+**A collaborative coding platform with real-time video calls, pair programming, and multi-language code execution**
+
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Available-green?style=for-the-badge)](talent-quotient-frontend.vercel.app)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+
+</div>
 
 ## 🎯 Overview
 
@@ -427,5 +435,14 @@ For issues, questions, or feature requests:
 - **Issue Tracker**: [GitHub Issues](https://github.com/MohammadAli-14/Talent-Quotient-V-2/issues)
 
 ---
+<div align="center">
+
+**Built with ❤️ by [Mohammad Ali](https://github.com/MohammadAli-14)**
+
+⭐ **Star this repo if you found it useful!** ⭐
+
+[Report Bug](https://github.com/MohammadAli-14/Talent-Quotient-V-2/issues) · [Request Feature](https://github.com/MohammadAli-14/Talent-Quotient-V-2/issues)
+
+</div>
 
 **Note**: This is a full-stack application. For development, you need to run both the backend and frontend servers. Make sure MongoDB is running and all environment variables are properly configured. For production deployment, consider using a process manager like PM2 and setting up proper SSL certificates.
