@@ -1,11 +1,10 @@
-# Talent Quotient Full Stack Coding Interview Platform
+# Talent Quotient - Full Stack Coding Interview Platform
 
 <div align="center">
-  
 
 **A collaborative coding platform with real-time video calls, pair programming, and multi-language code execution**
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Available-green?style=for-the-badge)](talent-quotient-frontend.vercel.app)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Available-green?style=for-the-badge)](https://talent-quotient-frontend.vercel.app/)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
@@ -14,88 +13,36 @@
 
 ## 🎯 Overview
 
-Talent Quotient V2 is a complete full-stack application for conducting technical interviews and coding assessments. This repository consolidates both the frontend and backend components into a unified project structure. It provides interviewers and candidates with a seamless environment featuring real-time code collaboration, video conferencing, problem-solving, and comprehensive session analytics.
+Talent Quotient is a complete full-stack platform for conducting realistic, collaborative technical interviews. It provides interviewers and candidates with a seamless environment that combines real-time code collaboration, video conferencing, a curated problem database, and live code execution.
+
+The platform is designed to reflect real-world pair programming scenarios, allowing interviewers to observe not just the final code, but the candidate's thought process, problem-solving approach, and ability to communicate while coding.
+
+## ✨ Key Features
+
+### **Core Platform Capabilities**
+- **Interactive Code Editor**: Monaco Editor with syntax highlighting for 8+ languages (JavaScript, Python, Java, C++, etc.)
+- **Real-time Video Calls**: Integrated WebRTC video conferencing with screen sharing
+- **Live Code Execution**: Execute code in multiple languages using Piston API
+- **Real-time Collaboration**: Multiple users can edit code simultaneously with cursor visibility
+- **Problem Database**: Curated coding problems with descriptions, test cases, and difficulty levels
+- **Session Management**: Create, join, and manage interview sessions
+- **Responsive Design**: Mobile-friendly interface with dark/light mode support
+
+### **Interview-Specific Features**
+- **Shared Editing**: Both interviewer and candidate can type and see changes in real-time, enabling true pair programming
+- **Live Test Runner**: Execute code against test cases during the interview to instantly validate solutions
+- **Multiple Language Support**: Candidates can choose their preferred programming language for the assessment
+- **Interview Recordings**: Session playback for post-interview review and team calibration
 
 ## 📂 Repository Structure
 
-This main repository (**Talent-Quotient-V-2**) contains both the frontend and backend code. For dedicated development, you can also access the individual repositories:
+This project is organized across three main repositories:
 
 | Repository | Purpose | Technology Stack |
 |------------|---------|------------------|
 | **[Talent-Quotient-V-2](https://github.com/MohammadAli-14/Talent-Quotient-V-2)** | **Main Full-Stack Repository** | React + Node.js + Express + MongoDB |
 | **[Talent-Quotient-Frontend](https://github.com/MohammadAli-14/Talent-Quotient-Frontend)** | Dedicated Frontend Application | React + Vite + Tailwind CSS |
-| **[Talent-Qutotient-Backend](https://github.com/MohammadAli-14/Talent-Qutotient-Backend)** | Dedicated Backend API | Node.js + Express + MongoDB + Socket.io |
-
-## ✨ Features
-
-### **Frontend Features**
-- **Interactive Code Editor**: Monaco Editor with syntax highlighting for 8+ languages (JavaScript, Python, Java, C++, etc.)
-- **Real-time Video Calls**: Integrated WebRTC video conferencing with screen sharing
-- **Problem Database**: Curated coding problems with descriptions, test cases, and difficulty levels
-- **Live Code Execution**: Execute code in multiple languages using Piston API
-- **Responsive Design**: Mobile-friendly interface with dark/light mode support
-- **Session Management**: Create, join, and manage interview sessions
-- **Real-time Collaboration**: Live code editing and chat functionality
-
-### **Backend Features**
-- **RESTful API**: Comprehensive endpoints for session management, user authentication, and data operations
-- **WebSocket Support**: Real-time communication for chat and code collaboration
-- **JWT Authentication**: Secure user authentication and authorization
-- **MongoDB Integration**: Scalable database with Mongoose ODM
-- **Background Job Processing**: Asynchronous tasks with Inngest
-- **File Streaming**: Efficient handling of large responses and uploads
-
-## 🏗️ Project Architecture
-
-### **Frontend Structure**
-```
-├── public/                 # Static assets and images
-├── src/
-│   ├── api/               # API integration services
-│   ├── components/        # Reusable React components
-│   │   ├── ActiveSessions.jsx
-│   │   ├── CodeEditorPanel.jsx
-│   │   ├── CreateSessionModal.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── OutputPanel.jsx
-│   │   ├── ProblemDescription.jsx
-│   │   ├── VideoCallUI.jsx
-│   │   └── WelcomeSection.jsx
-│   ├── data/              # Static data and problem sets
-│   ├── hooks/             # Custom React hooks
-│   ├── lib/               # Utility libraries
-│   ├── pages/             # Page components
-│   │   ├── DashboardPage.jsx
-│   │   ├── HomePage.jsx
-│   │   ├── ProblemPage.jsx
-│   │   ├── ProblemsPage.jsx
-│   │   └── SessionPage.jsx
-│   ├── App.jsx            # Main application component
-│   ├── main.jsx          # Application entry point
-│   └── index.css         # Global styles
-```
-
-### **Backend Structure**
-```
-├── src/
-│   ├── controllers/       # Request handlers
-│   │   ├── chatController.js
-│   │   └── sessionController.js
-│   ├── lib/              # Core utilities
-│   │   ├── db.js         # Database connection
-│   │   ├── env.js        # Environment configuration
-│   │   ├── inngest.js    # Background job client
-│   │   └── stream.js     # Stream processing utilities
-│   ├── middleware/       # Express middleware
-│   │   └── protectRoute.js
-│   ├── models/           # MongoDB models
-│   │   ├── Session.js
-│   │   └── User.js
-│   ├── routes/           # API route definitions
-│   │   ├── chatRoutes.js
-│   │   └── sessionRoute.js
-│   └── server.js         # Application entry point
-```
+| **[Talent-Qutotient-Backend](https://github.com/MohammadAli-14/Talent-Qutotient-Backend)** | Dedicated Backend API | Node.js + Express + MongoDB  |
 
 ## 🚀 Quick Start (Full-Stack Setup)
 
@@ -104,7 +51,7 @@ This main repository (**Talent-Quotient-V-2**) contains both the frontend and ba
 - MongoDB (v4.4 or higher)
 - npm or yarn
 
-### **1. Clone the Repository**
+### **1. Clone the Main Repository**
 ```bash
 git clone https://github.com/MohammadAli-14/Talent-Quotient-V-2.git
 cd Talent-Quotient-V-2
@@ -112,11 +59,13 @@ cd Talent-Quotient-V-2
 
 ### **2. Backend Setup**
 ```bash
-# Navigate to backend directory (if separated)
+# Navigate to backend directory
+cd backend
+
 # Install dependencies
 npm install
 
-# Create .env file in backend root
+# Create .env file
 cp .env.example .env
 
 # Edit .env with your configuration
@@ -126,11 +75,13 @@ npm run dev
 
 ### **3. Frontend Setup**
 ```bash
-# Navigate to frontend directory (if separated)
+# Navigate to frontend directory
+cd frontend
+
 # Install dependencies
 npm install
 
-# Create .env file in frontend root
+# Create .env file
 cp .env.example .env
 
 # Edit .env with your configuration
@@ -152,11 +103,6 @@ MONGODB_URI=mongodb://localhost:27017/talent-quotient
 # JWT
 JWT_SECRET=your_jwt_secret_key_here
 
-# Inngest
-INNGEST_EVENT_KEY=your_inngest_event_key
-INNGEST_SIGNING_KEY=your_inngest_signing_key
-INNGEST_BASE_URL=your_inngest_base_url
-
 # CORS
 CORS_ORIGIN=http://localhost:5173
 ```
@@ -173,33 +119,7 @@ VITE_PISTON_API_URL=https://emkc.org/api/v2/piston
 # Feature Flags
 VITE_ENABLE_VIDEO_CALL=true
 VITE_ENABLE_CODE_EXECUTION=true
-
-# Video Service (Optional)
-VITE_VIDEO_SERVICE_URL=your_video_service_url
 ```
-
-## 📦 Dependencies
-
-### **Backend Dependencies**
-- **express**: Web framework
-- **mongoose**: MongoDB ODM
-- **jsonwebtoken**: JWT authentication
-- **socket.io**: Real-time communication
-- **cors**: Cross-origin resource sharing
-- **dotenv**: Environment variable management
-- **inngest**: Background job processing
-- **bcryptjs**: Password hashing
-
-### **Frontend Dependencies**
-- **React 18**: UI library
-- **Vite**: Build tool and development server
-- **React Router DOM**: Client-side routing
-- **axios**: HTTP client for API requests
-- **socket.io-client**: Real-time communication client
-- **@monaco-editor/react**: Code editor component
-- **Tailwind CSS**: Utility-first CSS framework
-- **react-icons**: Icon library
-- **date-fns**: Date manipulation library
 
 ## 🛠️ Available Scripts
 
@@ -207,7 +127,7 @@ VITE_VIDEO_SERVICE_URL=your_video_service_url
 ```bash
 npm run dev        # Start development server with nodemon
 npm start          # Start production server
-npm test           # Run tests (if configured)
+npm test           # Run tests
 ```
 
 ### **Frontend Scripts**
@@ -216,7 +136,6 @@ npm run dev        # Start development server
 npm run build      # Build for production
 npm run preview    # Preview production build
 npm run lint       # Run ESLint
-npm run format     # Format code with Prettier
 ```
 
 ## 🔌 API Endpoints
@@ -228,17 +147,15 @@ npm run format     # Format code with Prettier
 - `GET /api/sessions/user/:userId` - Get user's sessions
 - `DELETE /api/sessions/:id` - Delete session
 
-### **Chat & Real-time**
+### **Real-time Communication**
 - `POST /api/chat/new` - Start new chat session
 - `GET /api/chat/:sessionId` - Get chat history
-- `POST /api/chat/message` - Send message
-- WebSocket events for real-time updates
+- WebSocket events for real-time code collaboration and chat
 
 ### **Authentication**
 - `POST /api/auth/register` - User registration
 - `POST /api/auth/login` - User login
 - `GET /api/auth/me` - Get current user
-- `POST /api/auth/logout` - User logout
 
 ## 🎯 Usage Guide
 
@@ -252,35 +169,30 @@ npm run format     # Format code with Prettier
 7. **Session review**: Save and review session performance metrics
 
 ### **For Candidates**
-1. **Join session**: Use provided session link
+1. **Join session**: Use provided session link or visit [Live Demo](https://talent-quotient-frontend.vercel.app/)
 2. **Understand problem**: Read problem description and constraints
 3. **Write solution**: Use code editor to implement solution
 4. **Test code**: Run code against sample test cases
 5. **Submit solution**: Final submission for evaluation
-6. **Receive feedback**: Get performance metrics and feedback
 
 ## 🚀 Deployment
 
-### **Option 1: Deploy with Vercel (Frontend) + Render/Heroku (Backend)**
+### **Option 1: Deploy with Vercel (Frontend) + Render (Backend)**
 1. **Frontend to Vercel**:
-   ```bash
-   # Connect GitHub repository to Vercel
-   # Configure environment variables
-   # Deploy automatically on push
-   ```
+   - Connect your GitHub repository to Vercel
+   - Configure environment variables
+   - Deploy automatically on push
 
 2. **Backend to Render**:
-   ```bash
-   # Create new Web Service on Render
-   # Connect backend repository
-   # Set environment variables
-   # Specify start command: npm start
-   ```
+   - Create new Web Service on Render
+   - Connect backend repository
+   - Set environment variables (especially `MONGODB_URI`)
+   - Specify start command: `npm start`
 
 ### **Option 2: Docker Deployment**
 ```dockerfile
 # Backend Dockerfile
-FROM node:16-alpine
+FROM node:18-alpine
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci --only=production
@@ -289,7 +201,7 @@ EXPOSE 3000
 CMD ["npm", "start"]
 
 # Frontend Dockerfile
-FROM node:16-alpine as build
+FROM node:18-alpine as build
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
@@ -302,82 +214,102 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
-### **Option 3: Manual Deployment**
-1. **Backend Setup**:
-   ```bash
-   # Build and deploy backend
-   npm install --production
-   npm run build
-   pm2 start server.js --name "talent-backend"
-   ```
-
-2. **Frontend Setup**:
-   ```bash
-   # Build and deploy frontend
-   npm install
-   npm run build
-   # Deploy dist/ folder to web server (Nginx, Apache)
-   ```
-
 ## 📱 Features in Detail
 
 ### **1. Real-time Code Collaboration**
-- Multiple users can edit code simultaneously
-- Cursor position visibility
-- Change highlighting
-- Language-specific syntax validation
+- Multiple users can edit code simultaneously with cursor position visibility
+- Change highlighting and language-specific syntax validation
+- Designed to facilitate natural pair programming conversations
 
 ### **2. Video Conferencing**
-- WebRTC-based peer-to-peer connection
-- Screen sharing capabilities
-- Audio/video controls
-- Participant management
+- WebRTC-based peer-to-peer connection for low latency
+- Screen sharing capabilities for system design interviews
+- Audio/video controls and participant management
 
 ### **3. Problem Management**
-- Curated problem sets by difficulty
-- Multiple test cases per problem
-- Time and memory constraints
-- Solution validation
+- Curated problem sets categorized by difficulty (Easy, Medium, Hard)
+- Multiple test cases per problem with time and memory constraints
+- Solution validation and auto-grading system
 
-### **4. Session Analytics**
-- Code execution time tracking
-- Number of attempts
-- Test case pass/fail statistics
-- Performance scoring
+### **4. Code Execution Environment**
+- Support for multiple programming languages via Piston API
+- Safe code execution in isolated sandboxes
+- Real-time output streaming and error reporting
 
-## 🧪 Testing
+## 🏗️ Project Architecture
 
-### **Backend Testing**
-```bash
-# Run backend tests
-npm test
-
-# Test coverage
-npm run test:coverage
+### **Frontend Structure**
+```
+├── public/                 # Static assets
+├── src/
+│   ├── api/               # API integration services
+│   ├── components/        # Reusable React components
+│   │   ├── ActiveSessions.jsx
+│   │   ├── CodeEditorPanel.jsx
+│   │   ├── CreateSessionModal.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── OutputPanel.jsx
+│   │   ├── ProblemDescription.jsx
+│   │   ├── VideoCallUI.jsx
+│   │   └── WelcomeSection.jsx
+│   ├── data/              # Problem sets and static data
+│   ├── hooks/             # Custom React hooks
+│   ├── lib/               # Utility libraries
+│   ├── pages/             # Page components
+│   │   ├── DashboardPage.jsx
+│   │   ├── HomePage.jsx
+│   │   ├── ProblemPage.jsx
+│   │   ├── ProblemsPage.jsx
+│   │   └── SessionPage.jsx
+│   ├── App.jsx            # Main application
+│   ├── main.jsx          # Application entry
+│   └── index.css         # Global styles
 ```
 
-### **Frontend Testing**
-```bash
-# Run frontend tests
-npm test
-
-# Component testing
-npm run test:components
+### **Backend Structure**
+```
+├── src/
+│   ├── controllers/       # Request handlers
+│   │   ├── chatController.js
+│   │   └── sessionController.js
+│   ├── lib/              # Core utilities
+│   │   ├── db.js         # Database connection
+│   │   ├── env.js        # Environment config
+│   │   ├── stream.js     # Stream utilities
+│   ├── middleware/       # Express middleware
+│   │   └── protectRoute.js
+│   ├── models/           # MongoDB models
+│   │   ├── Session.js
+│   │   └── User.js
+│   ├── routes/           # API routes
+│   │   ├── chatRoutes.js
+│   │   └── sessionRoute.js
+│   └── server.js         # Application entry
 ```
 
-## 🔒 Security Features
+## 📦 Dependencies
 
-- **JWT-based authentication** with token refresh
-- **CORS configuration** for cross-origin requests
-- **Input validation** and sanitization
-- **Rate limiting** on API endpoints
-- **Secure password hashing** with bcrypt
-- **HTTPS enforcement** in production
-- **Environment-based configuration**
+### **Backend Dependencies**
+- **express**: Web framework
+- **mongoose**: MongoDB ODM
+- **jsonwebtoken**: JWT authentication
+- **socket.io**: Real-time communication
+- **cors**: Cross-origin resource sharing
+- **dotenv**: Environment variable management
+- **bcryptjs**: Password hashing
+
+### **Frontend Dependencies**
+- **React 18**: UI library
+- **Vite**: Build tool and development server
+- **React Router DOM**: Client-side routing
+- **axios**: HTTP client for API requests
+- **vs code-editor/react**: Code editor component
+- **Tailwind CSS**: Utility-first CSS framework
+- **react-icons**: Icon library
 
 ## 🤝 Contributing
 
-We welcome contributions to Talent Quotient V2! Please follow these steps:
+We welcome contributions to Talent Quotient! Please follow these steps:
 
 1. **Fork the repository**
 2. **Create a feature branch**
@@ -415,24 +347,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Monaco Editor** for the powerful code editor
 - **Socket.io** for real-time communication
 - **Piston API** for code execution service
-- **All Contributors** who have helped shape this project
-
-## 📞 Support
-
-For issues, questions, or feature requests:
-
-1. **Check existing issues** on GitHub
-2. **Open a new issue** with detailed description
-3. **Provide reproduction steps** for bugs
-4. **Suggest improvements** with use cases
 
 ## 🔗 Important Links
 
+- **Live Demo**: [https://talent-quotient-frontend.vercel.app/](https://talent-quotient-frontend.vercel.app/)
 - **Main Repository**: [Talent-Quotient-V-2](https://github.com/MohammadAli-14/Talent-Quotient-V-2)
 - **Frontend Repository**: [Talent-Quotient-Frontend](https://github.com/MohammadAli-14/Talent-Quotient-Frontend)
 - **Backend Repository**: [Talent-Qutotient-Backend](https://github.com/MohammadAli-14/Talent-Qutotient-Backend)
-- **Live Demo**: [Coming Soon - Check main repository for updates]
-- **Issue Tracker**: [GitHub Issues](https://github.com/MohammadAli-14/Talent-Quotient-V-2/issues)
 
 ---
 <div align="center">
@@ -440,8 +361,6 @@ For issues, questions, or feature requests:
 **Built with ❤️ by [Mohammad Ali](https://github.com/MohammadAli-14)**
 
 ⭐ **Star this repo if you found it useful!** ⭐
-
-[Report Bug](https://github.com/MohammadAli-14/Talent-Quotient-V-2/issues) · [Request Feature](https://github.com/MohammadAli-14/Talent-Quotient-V-2/issues)
 
 </div>
 
