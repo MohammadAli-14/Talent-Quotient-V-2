@@ -20,7 +20,7 @@ The platform is designed to reflect real-world pair programming scenarios, allow
 ## ✨ Key Features
 
 ### **Core Platform Capabilities**
-- **Interactive Code Editor**: Monaco Editor with syntax highlighting for 8+ languages (JavaScript, Python, Java, C++, etc.)
+- **Interactive Code Editor**: Monaco Editor with syntax highlighting for 5+ languages (JavaScript, Python, Java, C++, etc.)
 - **Real-time Video Calls**: Integrated WebRTC video conferencing with screen sharing
 - **Live Code Execution**: Execute code in multiple languages using Piston API
 - **Real-time Collaboration**: Multiple users can edit code simultaneously with cursor visibility
