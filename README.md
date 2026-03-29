@@ -1,4 +1,4 @@
-# Talent Quotient - Full Stack Coding Interview Platform
+# Talent Quotient - The Full Stack Coding Interview Platform
 
 <div align="center">
 
